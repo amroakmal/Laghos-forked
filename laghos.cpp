@@ -241,48 +241,48 @@ int main(int argc, char *argv[])
    {
       args.PrintOptions(cout);
 
-      #ifdef LAGHOS_USE_CALIPER
-         adiak::value("dimension", dim);
-         adiak::value("mesh", mesh_file);
-         adiak::value("elem-per-mpi", elem_per_mpi);
-         adiak::value("xelems", nx);
-         adiak::value("yelems", ny);
-         adiak::value("zelems", nz);
-         adiak::value("blast-energy", blast_energy);
-         adiak::value("xwidth", Sx);
-         adiak::value("ywidth", Sy);
-         adiak::value("zwidth", Sz);
-         adiak::value("refine-serial", rs_levels);
-         adiak::value("refine-parallel", rp_levels);
-         adiak::value("problem", problem);
-         adiak::value("order-kinematic", order_v);
-         adiak::value("order-thermo", order_e);
-         adiak::value("order-intrule", order_q);
-         adiak::value("ode-solver", ode_solver_type);
-         adiak::value("t-final", t_final);
-         adiak::value("cfl", cfl);
-         adiak::value("cg-tol", cg_tol);
-         adiak::value("ftz-tol", ftz_tol);
-         adiak::value("delta-tol", delta_tol);
-         adiak::value("cg-max-steps", cg_max_iter);
-         adiak::value("max-steps", max_tsteps);
-         adiak::value("partial-assembly", p_assembly);
-         adiak::value("impose-viscosity", impose_visc);
-         adiak::value("visualization", visualization);
-         adiak::value("visualization-steps", vis_steps);
-         adiak::value("visit", visit);
-         adiak::value("print", gfprint);
-         adiak::value("outputfilename", basename);
-         adiak::value("device", device);
-         adiak::value("checks", check);
-         adiak::value("exact-error", check_exact_sedov);
-         adiak::value("mem", mem_usage);
-         adiak::value("fom", fom);
-         adiak::value("gpu-aware-mpi", gpu_aware_mpi);
-         adiak::value("dev-pool-size", dev_pool_size);
-         adiak::value("conforming", enable_nc);
-         adiak::value("dev", dev);
-      #endif
+      // #ifdef LAGHOS_USE_CALIPER
+      //    adiak::value("dimension", dim);
+      //    adiak::value("mesh", mesh_file);
+      //    adiak::value("elem-per-mpi", elem_per_mpi);
+      //    adiak::value("xelems", nx);
+      //    adiak::value("yelems", ny);
+      //    adiak::value("zelems", nz);
+      //    adiak::value("blast-energy", blast_energy);
+      //    adiak::value("xwidth", Sx);
+      //    adiak::value("ywidth", Sy);
+      //    adiak::value("zwidth", Sz);
+      //    adiak::value("refine-serial", rs_levels);
+      //    adiak::value("refine-parallel", rp_levels);
+      //    adiak::value("problem", problem);
+      //    adiak::value("order-kinematic", order_v);
+      //    adiak::value("order-thermo", order_e);
+      //    adiak::value("order-intrule", order_q);
+      //    adiak::value("ode-solver", ode_solver_type);
+      //    adiak::value("t-final", t_final);
+      //    adiak::value("cfl", cfl);
+      //    adiak::value("cg-tol", cg_tol);
+      //    adiak::value("ftz-tol", ftz_tol);
+      //    adiak::value("delta-tol", delta_tol);
+      //    adiak::value("cg-max-steps", cg_max_iter);
+      //    adiak::value("max-steps", max_tsteps);
+      //    adiak::value("partial-assembly", p_assembly);
+      //    adiak::value("impose-viscosity", impose_visc);
+      //    adiak::value("visualization", visualization);
+      //    adiak::value("visualization-steps", vis_steps);
+      //    adiak::value("visit", visit);
+      //    adiak::value("print", gfprint);
+      //    adiak::value("outputfilename", basename);
+      //    adiak::value("device", device);
+      //    adiak::value("checks", check);
+      //    adiak::value("exact-error", check_exact_sedov);
+      //    adiak::value("mem", mem_usage);
+      //    adiak::value("fom", fom);
+      //    adiak::value("gpu-aware-mpi", gpu_aware_mpi);
+      //    adiak::value("dev-pool-size", dev_pool_size);
+      //    adiak::value("conforming", enable_nc);
+      //    adiak::value("dev", dev);
+      // #endif
    }
 
    if (check_exact_sedov)
